@@ -1,0 +1,3560 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../../assets/molml_logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-8.5.6">
+    
+    
+      
+        <title>descriptors - peptidy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.20d9efc8.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/style.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#descriptors" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="peptidy" class="md-header__button md-logo" aria-label="peptidy" data-md-component="logo">
+      
+  <img src="../../assets/molml_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            peptidy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              descriptors
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/molML/peptidy/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="peptidy" class="md-nav__button md-logo" aria-label="peptidy" data-md-component="logo">
+      
+  <img src="../../assets/molml_logo.png" alt="logo">
+
+    </a>
+    peptidy
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/molML/peptidy/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Homepage
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          API Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="API Reference" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          API Reference
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../biology/" class="md-nav__link">
+        biology
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          descriptors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        descriptors
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors" class="md-nav__link">
+    peptidy.descriptors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.aliphatic_index" class="md-nav__link">
+    aliphatic_index()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.aminoacid_frequencies" class="md-nav__link">
+    aminoacid_frequencies()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.aromaticity" class="md-nav__link">
+    aromaticity()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds" class="md-nav__link">
+    average_n_rotatable_bonds()
+  </a>
+  
+    <nav class="md-nav" aria-label="average_n_rotatable_bonds()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--start-comment-by-laura-please-check-if-you-agree-that-the-following-source-is-suitable-for-this-descriptor-also-for-pubchem-i-inserted-the-citation-by-the-pubchem-website-itself" class="md-nav__link">
+    Start: Comment By Laura: please check if you agree that the following source is suitable for this descriptor. Also for PubChem I inserted the citation by the PubChem Website itself
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--end-comment-laura" class="md-nav__link">
+    End comment Laura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--start-comment-sarah-the-source-looks-good-if-we-want-to-justify-why-we-have-chosen-to-add-this-descriptor-to-the-package" class="md-nav__link">
+    Start comment Sarah: The source looks good if we want to justify why we have chosen to add this descriptor to the package!
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--end-comment-sarah" class="md-nav__link">
+    End comment Sarah
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--comment-sarah-ive-used-rdkit-to-calculate-the-number-of-rotatable-bonds-for-every-aa-in-the-sequence-then-calculated-the-average-by-adding-them-up-and-dividing-by-lengthsequence" class="md-nav__link">
+    comment Sarah: I've used rdkit to calculate the number of rotatable bonds for every aa in the sequence, then calculated the average by adding them up and dividing by length(sequence)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.charge" class="md-nav__link">
+    charge()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.charge_density" class="md-nav__link">
+    charge_density()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.compute_descriptors" class="md-nav__link">
+    compute_descriptors()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.hydrophobic_aa_ratio" class="md-nav__link">
+    hydrophobic_aa_ratio()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.instability_index" class="md-nav__link">
+    instability_index()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.isoelectric_point" class="md-nav__link">
+    isoelectric_point()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.length" class="md-nav__link">
+    length()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.molecular_formula" class="md-nav__link">
+    molecular_formula()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.molecular_weight" class="md-nav__link">
+    molecular_weight()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.n_h_acceptors" class="md-nav__link">
+    n_h_acceptors()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.n_h_donors" class="md-nav__link">
+    n_h_donors()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.topological_polar_surface_area" class="md-nav__link">
+    topological_polar_surface_area()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.x_logp_energy" class="md-nav__link">
+    x_logp_energy()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encoding/" class="md-nav__link">
+        encoding
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tokenizer/" class="md-nav__link">
+        tokenizer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors" class="md-nav__link">
+    peptidy.descriptors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.aliphatic_index" class="md-nav__link">
+    aliphatic_index()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.aminoacid_frequencies" class="md-nav__link">
+    aminoacid_frequencies()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.aromaticity" class="md-nav__link">
+    aromaticity()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds" class="md-nav__link">
+    average_n_rotatable_bonds()
+  </a>
+  
+    <nav class="md-nav" aria-label="average_n_rotatable_bonds()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--start-comment-by-laura-please-check-if-you-agree-that-the-following-source-is-suitable-for-this-descriptor-also-for-pubchem-i-inserted-the-citation-by-the-pubchem-website-itself" class="md-nav__link">
+    Start: Comment By Laura: please check if you agree that the following source is suitable for this descriptor. Also for PubChem I inserted the citation by the PubChem Website itself
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--end-comment-laura" class="md-nav__link">
+    End comment Laura
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--start-comment-sarah-the-source-looks-good-if-we-want-to-justify-why-we-have-chosen-to-add-this-descriptor-to-the-package" class="md-nav__link">
+    Start comment Sarah: The source looks good if we want to justify why we have chosen to add this descriptor to the package!
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--end-comment-sarah" class="md-nav__link">
+    End comment Sarah
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peptidy.descriptors.average_n_rotatable_bonds--comment-sarah-ive-used-rdkit-to-calculate-the-number-of-rotatable-bonds-for-every-aa-in-the-sequence-then-calculated-the-average-by-adding-them-up-and-dividing-by-lengthsequence" class="md-nav__link">
+    comment Sarah: I've used rdkit to calculate the number of rotatable bonds for every aa in the sequence, then calculated the average by adding them up and dividing by length(sequence)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.charge" class="md-nav__link">
+    charge()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.charge_density" class="md-nav__link">
+    charge_density()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.compute_descriptors" class="md-nav__link">
+    compute_descriptors()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.hydrophobic_aa_ratio" class="md-nav__link">
+    hydrophobic_aa_ratio()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.instability_index" class="md-nav__link">
+    instability_index()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.isoelectric_point" class="md-nav__link">
+    isoelectric_point()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.length" class="md-nav__link">
+    length()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.molecular_formula" class="md-nav__link">
+    molecular_formula()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.molecular_weight" class="md-nav__link">
+    molecular_weight()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.n_h_acceptors" class="md-nav__link">
+    n_h_acceptors()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.n_h_donors" class="md-nav__link">
+    n_h_donors()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.topological_polar_surface_area" class="md-nav__link">
+    topological_polar_surface_area()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peptidy.descriptors.x_logp_energy" class="md-nav__link">
+    x_logp_energy()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/molML/peptidy/edit/master/docs/api/descriptors.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="descriptors">descriptors</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="peptidy.descriptors"></a>
+  <div class="doc doc-contents first">
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.aliphatic_index">
+<code class="highlight language-python"><span class="n">aliphatic_index</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the aliphatic index of a peptide.</p>
+<p>The aliphatic index is a measure of the thermal stability of a peptide. It is defined as the volume
+of a protein that is occupied by aliphatic side chains of amino acids, such as alanine, valine,
+isoleucine, and leucine (<a href="https://academic.oup.com/jb/article-abstract/88/6/1895/773432?redirectedFrom=fulltext">Ikai, 1980</a>).</p>
+<p>Aliphatic index is calculated as:</p>
+<p><span class="arithmatex">\(\textit{aliphatic_index} = 100 * (f_A + 2.9 f_V + 3.9 f_I + 3.9 f_L)\)</span>,</p>
+<p>where <span class="arithmatex">\(f_A\)</span>, <span class="arithmatex">\(f_V\)</span>, <span class="arithmatex">\(f_I\)</span>, and <span class="arithmatex">\(f_L\)</span> are the frequencies of alanine, valine, isoleucine, and leucine, respectively.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>The aliphatic index of the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td><p>If the peptide sequence contains unknown amino acids or a syntax error.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">aliphatic_index</span><span class="p">(</span><span class="s2">&quot;AVIL&quot;</span><span class="p">)</span>
+<span class="go">292.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># doubling the length of the peptide (with no aliphatic amino acids) halves the aliphatic index</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aliphatic_index</span><span class="p">(</span><span class="s1">&#39;AVILMNPS_p&#39;</span><span class="p">)</span>
+<span class="go">146.25</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aliphatic_index</span><span class="p">(</span><span class="s2">&quot;AKLVT&quot;</span><span class="p">)</span>
+<span class="go">156.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aliphatic_index</span><span class="p">(</span><span class="s1">&#39;ACD&#39;</span><span class="p">)</span>
+<span class="go">33.3...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Equals to 0, if the peptide contains no aliphatic amino acids</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aliphatic_index</span><span class="p">(</span><span class="s2">&quot;WYGHP&quot;</span><span class="p">)</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aliphatic_index</span><span class="p">(</span><span class="s1">&#39;DEFR_mSC&#39;</span><span class="p">)</span>
+<span class="go">0.0</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">aliphatic_index</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the aliphatic index of a peptide.</span>
+
+<span class="sd">    The aliphatic index is a measure of the thermal stability of a peptide. It is defined as the volume</span>
+<span class="sd">    of a protein that is occupied by aliphatic side chains of amino acids, such as alanine, valine,</span>
+<span class="sd">    isoleucine, and leucine ([Ikai, 1980](https://academic.oup.com/jb/article-abstract/88/6/1895/773432?redirectedFrom=fulltext)).</span>
+
+<span class="sd">    Aliphatic index is calculated as:</span>
+
+<span class="sd">    $\\textit{aliphatic_index} = 100 * (f_A + 2.9 f_V + 3.9 f_I + 3.9 f_L)$,</span>
+
+<span class="sd">    where $f_A$, $f_V$, $f_I$, and $f_L$ are the frequencies of alanine, valine, isoleucine, and leucine, respectively.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        The aliphatic index of the peptide.</span>
+
+<span class="sd">    Raises</span>
+<span class="sd">    ------</span>
+<span class="sd">    ValueError</span>
+<span class="sd">        If the peptide sequence contains unknown amino acids or a syntax error.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; aliphatic_index(&quot;AVIL&quot;)</span>
+<span class="sd">    292.5</span>
+<span class="sd">    &gt;&gt;&gt; # doubling the length of the peptide (with no aliphatic amino acids) halves the aliphatic index</span>
+<span class="sd">    &gt;&gt;&gt; aliphatic_index(&#39;AVILMNPS_p&#39;)</span>
+<span class="sd">    146.25</span>
+<span class="sd">    &gt;&gt;&gt; aliphatic_index(&quot;AKLVT&quot;)</span>
+<span class="sd">    156.0</span>
+<span class="sd">    &gt;&gt;&gt; aliphatic_index(&#39;ACD&#39;)</span>
+<span class="sd">    33.3...</span>
+<span class="sd">    &gt;&gt;&gt; # Equals to 0, if the peptide contains no aliphatic amino acids</span>
+<span class="sd">    &gt;&gt;&gt; aliphatic_index(&quot;WYGHP&quot;)</span>
+<span class="sd">    0.0</span>
+<span class="sd">    &gt;&gt;&gt; aliphatic_index(&#39;DEFR_mSC&#39;)</span>
+<span class="sd">    0.0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">aa_counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">tokenized_peptide</span><span class="p">))</span>
+    <span class="n">aa_counts</span> <span class="o">=</span> <span class="p">{</span><span class="n">aa</span><span class="p">:</span> <span class="n">count</span> <span class="o">/</span> <span class="n">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="k">for</span> <span class="n">aa</span><span class="p">,</span> <span class="n">count</span> <span class="ow">in</span> <span class="n">aa_counts</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">aa_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="o">+</span> <span class="mf">2.9</span> <span class="o">*</span> <span class="n">aa_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="o">+</span> <span class="mf">3.9</span> <span class="o">*</span> <span class="p">(</span><span class="n">aa_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">+</span> <span class="n">aa_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;L&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.aminoacid_frequencies">
+<code class="highlight language-python"><span class="n">aminoacid_frequencies</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the frequency (count / peptide length) of all amino acids in the input sequence.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Dict">Dict</span>[str, float]</code>
+          </td>
+          <td><p>A dictionary that contains the frequencies of all amino acids and post-translations,
+not only the ones present in the sequence. The keys have the format <code>freq_&lt;AA&gt;</code> (<code>AA</code> = letter code of the
+amino acid).</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td><p>If the peptide sequence contains unknown amino acids or a syntax error.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span> <span class="o">=</span> <span class="n">aminoacid_frequencies</span><span class="p">(</span><span class="s2">&quot;AVIL&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span><span class="p">[</span><span class="s2">&quot;freq_A&quot;</span><span class="p">]</span>
+<span class="go">0.25</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span><span class="p">[</span><span class="s2">&quot;freq_V&quot;</span><span class="p">]</span>
+<span class="go">0.25</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span><span class="p">[</span><span class="s2">&quot;freq_C_m&quot;</span><span class="p">]</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span><span class="p">[</span><span class="s2">&quot;freq_R&quot;</span><span class="p">]</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span> <span class="o">=</span> <span class="n">aminoacid_frequencies</span><span class="p">(</span><span class="s1">&#39;AC_mD&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span><span class="p">[</span><span class="s2">&quot;freq_C_m&quot;</span><span class="p">]</span>
+<span class="go">0.3...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span><span class="p">[</span><span class="s2">&quot;freq_D&quot;</span><span class="p">]</span>
+<span class="go">0.3...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span><span class="p">[</span><span class="s2">&quot;freq_C&quot;</span><span class="p">]</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">freqs</span><span class="p">[</span><span class="s2">&quot;freq_W&quot;</span><span class="p">]</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aminoacid_frequencies</span><span class="p">(</span><span class="s1">&#39;AXR&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Unknown amino acid(s) in peptide: {&#39;X&#39;}</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">aminoacid_frequencies</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the frequency (count / peptide length) of all amino acids in the input sequence.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    Dict[str, float]</span>
+<span class="sd">        A dictionary that contains the frequencies of all amino acids and post-translations,</span>
+<span class="sd">        not only the ones present in the sequence. The keys have the format `freq_&lt;AA&gt;` (`AA` = letter code of the</span>
+<span class="sd">        amino acid).</span>
+
+<span class="sd">    Raises</span>
+<span class="sd">    ------</span>
+<span class="sd">    ValueError</span>
+<span class="sd">        If the peptide sequence contains unknown amino acids or a syntax error.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; freqs = aminoacid_frequencies(&quot;AVIL&quot;)</span>
+<span class="sd">    &gt;&gt;&gt; freqs[&quot;freq_A&quot;]</span>
+<span class="sd">    0.25</span>
+<span class="sd">    &gt;&gt;&gt; freqs[&quot;freq_V&quot;]</span>
+<span class="sd">    0.25</span>
+<span class="sd">    &gt;&gt;&gt; freqs[&quot;freq_C_m&quot;]</span>
+<span class="sd">    0.0</span>
+<span class="sd">    &gt;&gt;&gt; freqs[&quot;freq_R&quot;]</span>
+<span class="sd">    0.0</span>
+<span class="sd">    &gt;&gt;&gt; freqs = aminoacid_frequencies(&#39;AC_mD&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; freqs[&quot;freq_C_m&quot;]</span>
+<span class="sd">    0.3...</span>
+<span class="sd">    &gt;&gt;&gt; freqs[&quot;freq_D&quot;]</span>
+<span class="sd">    0.3...</span>
+<span class="sd">    &gt;&gt;&gt; freqs[&quot;freq_C&quot;]</span>
+<span class="sd">    0.0</span>
+<span class="sd">    &gt;&gt;&gt; freqs[&quot;freq_W&quot;]</span>
+<span class="sd">    0.0</span>
+<span class="sd">    &gt;&gt;&gt; aminoacid_frequencies(&#39;AXR&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: Unknown amino acid(s) in peptide: {&#39;X&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">aa_counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">tokenized_peptide</span><span class="p">))</span>
+    <span class="n">peptide_len</span> <span class="o">=</span> <span class="n">length</span><span class="p">(</span><span class="n">tokenized_peptide</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="sa">f</span><span class="s2">&quot;freq_</span><span class="si">{</span><span class="n">aa</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">:</span> <span class="n">aa_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">aa</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">/</span> <span class="n">peptide_len</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">biology</span><span class="o">.</span><span class="n">aminoacids</span>
+    <span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.aromaticity">
+<code class="highlight language-python"><span class="n">aromaticity</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the sum of the frequencies of aromatic amino-acids
+("F", "W", "Y", and "Y_p") as a measure of aromaticity of a peptide
+(<a href="https://academic.oup.com/nar/article-abstract/22/15/3174/1087817">Lobry,1994</a>).</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Frequency of aromatic residues in the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td><p>If the peptide sequence contains unknown amino acids or a syntax error.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">aromaticity</span><span class="p">(</span><span class="s2">&quot;AVIL&quot;</span><span class="p">)</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aromaticity</span><span class="p">(</span><span class="s2">&quot;WYGHP&quot;</span><span class="p">)</span>
+<span class="go">0.4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aromaticity</span><span class="p">(</span><span class="s1">&#39;ACDEF&#39;</span><span class="p">)</span>
+<span class="go">0.2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">aromaticity</span><span class="p">(</span><span class="s1">&#39;DAY_pCDFWY&#39;</span><span class="p">)</span>
+<span class="go">0.5</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span>
+<span class="normal">146</span>
+<span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">aromaticity</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the sum of the frequencies of aromatic amino-acids</span>
+<span class="sd">    (&quot;F&quot;, &quot;W&quot;, &quot;Y&quot;, and &quot;Y_p&quot;) as a measure of aromaticity of a peptide</span>
+<span class="sd">    ([Lobry,1994](https://academic.oup.com/nar/article-abstract/22/15/3174/1087817)).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Frequency of aromatic residues in the peptide.</span>
+
+<span class="sd">    Raises</span>
+<span class="sd">    ------</span>
+<span class="sd">    ValueError</span>
+<span class="sd">        If the peptide sequence contains unknown amino acids or a syntax error.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; aromaticity(&quot;AVIL&quot;)</span>
+<span class="sd">    0.0</span>
+<span class="sd">    &gt;&gt;&gt; aromaticity(&quot;WYGHP&quot;)</span>
+<span class="sd">    0.4</span>
+<span class="sd">    &gt;&gt;&gt; aromaticity(&#39;ACDEF&#39;)</span>
+<span class="sd">    0.2</span>
+<span class="sd">    &gt;&gt;&gt; aromaticity(&#39;DAY_pCDFWY&#39;)</span>
+<span class="sd">    0.5</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">peptide</span><span class="p">))</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">aa</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">biology</span><span class="o">.</span><span class="n">aromatic_aas</span><span class="p">])</span> <span class="o">/</span> <span class="n">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.average_n_rotatable_bonds">
+<code class="highlight language-python"><span class="n">average_n_rotatable_bonds</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the number of total rotatable bonds divided by the number of amino acids in the peptide.</p>
+<h3 id="peptidy.descriptors.average_n_rotatable_bonds--start-comment-by-laura-please-check-if-you-agree-that-the-following-source-is-suitable-for-this-descriptor-also-for-pubchem-i-inserted-the-citation-by-the-pubchem-website-itself">Start: Comment By Laura: please check if you agree that the following source is suitable for this descriptor. Also for PubChem I inserted the citation by the PubChem Website itself</h3>
+<p>Chain flexibility is known to play a role in binding [Francesca Peccati &amp; Gonzalo Jiménez-Osés, 2021]{https://pubs.acs.org/doi/10.1021/acsomega.1c00485}.</p>
+<h3 id="peptidy.descriptors.average_n_rotatable_bonds--end-comment-laura">End comment Laura</h3>
+<h3 id="peptidy.descriptors.average_n_rotatable_bonds--start-comment-sarah-the-source-looks-good-if-we-want-to-justify-why-we-have-chosen-to-add-this-descriptor-to-the-package">Start comment Sarah: The source looks good if we want to justify why we have chosen to add this descriptor to the package!</h3>
+<p>If the goal is to only explain where we got the number of rotatable bond from, the Peccati &amp; Jiménez-Osés citation can be left out.</p>
+<h3 id="peptidy.descriptors.average_n_rotatable_bonds--end-comment-sarah">End comment Sarah</h3>
+<p>The number of rotatable bonds per amino acid was retrieved from PubChem <a href="https://academic.oup.com/nar/article/51/D1/D1373/6777787?login=true">Kim et al., 2023</a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Average number of rotatable bonds in the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td><p>If the peptide sequence contains unknown amino acids or a syntax error.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <h3 id="peptidy.descriptors.average_n_rotatable_bonds--comment-sarah-ive-used-rdkit-to-calculate-the-number-of-rotatable-bonds-for-every-aa-in-the-sequence-then-calculated-the-average-by-adding-them-up-and-dividing-by-lengthsequence">comment Sarah: I've used rdkit to calculate the number of rotatable bonds for every aa in the sequence, then calculated the average by adding them up and dividing by length(sequence)</h3>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">average_n_rotatable_bonds</span><span class="p">(</span><span class="s2">&quot;AVIL&quot;</span><span class="p">)</span>
+<span class="go">2.25</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">average_n_rotatable_bonds</span><span class="p">(</span><span class="s2">&quot;WYGHP&quot;</span><span class="p">)</span>
+<span class="go">2.2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">average_n_rotatable_bonds</span><span class="p">(</span><span class="s1">&#39;ACD&#39;</span><span class="p">)</span>
+<span class="go">2.0</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span>
+<span class="normal">166</span>
+<span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span>
+<span class="normal">173</span>
+<span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span>
+<span class="normal">185</span>
+<span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span>
+<span class="normal">195</span>
+<span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">average_n_rotatable_bonds</span><span class="p">(</span>
+    <span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the number of total rotatable bonds divided by the number of amino acids in the peptide.</span>
+
+<span class="sd">    # Start: Comment By Laura: please check if you agree that the following source is suitable for this descriptor. Also for PubChem I inserted the citation by the PubChem Website itself</span>
+<span class="sd">    Chain flexibility is known to play a role in binding [Francesca Peccati &amp; Gonzalo Jiménez-Osés, 2021]{https://pubs.acs.org/doi/10.1021/acsomega.1c00485}.</span>
+<span class="sd">    # End comment Laura</span>
+<span class="sd">    # Start comment Sarah: The source looks good if we want to justify why we have chosen to add this descriptor to the package!</span>
+<span class="sd">    If the goal is to only explain where we got the number of rotatable bond from, the Peccati &amp; Jiménez-Osés citation can be left out.</span>
+<span class="sd">    # End comment Sarah</span>
+
+<span class="sd">    The number of rotatable bonds per amino acid was retrieved from PubChem [Kim et al., 2023](https://academic.oup.com/nar/article/51/D1/D1373/6777787?login=true).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Average number of rotatable bonds in the peptide.</span>
+
+<span class="sd">    Raises</span>
+<span class="sd">    ------</span>
+<span class="sd">    ValueError</span>
+<span class="sd">        If the peptide sequence contains unknown amino acids or a syntax error.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    # comment Sarah: I&#39;ve used rdkit to calculate the number of rotatable bonds for every aa in the sequence, then calculated the average by adding them up and dividing by length(sequence)</span>
+<span class="sd">    &gt;&gt;&gt; average_n_rotatable_bonds(&quot;AVIL&quot;)</span>
+<span class="sd">    2.25</span>
+<span class="sd">    &gt;&gt;&gt; average_n_rotatable_bonds(&quot;WYGHP&quot;)</span>
+<span class="sd">    2.2</span>
+<span class="sd">    &gt;&gt;&gt; average_n_rotatable_bonds(&#39;ACD&#39;)</span>
+<span class="sd">    2.0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">biology</span><span class="o">.</span><span class="n">n_rotatable_bonds</span><span class="p">[</span><span class="n">aa</span><span class="p">]</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">tokenized_peptide</span><span class="p">])</span> <span class="o">/</span> <span class="n">length</span><span class="p">(</span>
+        <span class="n">peptide</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.charge">
+<code class="highlight language-python"><span class="n">charge</span><span class="p">(</span><span class="n">peptide</span><span class="p">,</span> <span class="n">pH</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the total charge of the sequence.</p>
+<p>The method used is first described by Bjellqvist [Bjellqvist et al., 1993][https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/elps.11501401163].
+The total charge is then calculated based on the Henderson-Hasselbach equation <a href="https://www.sciencedirect.com/science/article/pii/0307441283900468?via%3Dihub">Aronson, 1983</a>.
+Pka of phosphoserine and phosphothreonine were retrieved from <a href="https://www.sciencedirect.com/science/article/pii/S0003269705004124?via%3Dihub">Xie,Jiang &amp; Ben-Amotz, 2005</a>.
+Pka of phosphotyrosine was taken from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1302655/#:~:text=The%20pKa%20value%20for,et%20al.%2C%201994">Wojciechowski M et al., 2003</a>
+Pka of the posttranslational of arginine was kept equal to the pka of arginine, based on <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/pro.2838">Evich M et al.,2015</a></p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>pH</code></td>
+          <td>
+                <code>float, optional</code>
+          </td>
+          <td><p>pH at which to calculate charge, by default 7.</p></td>
+          <td>
+                <code>7</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>The total charge of the sequence.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">charge</span><span class="p">(</span><span class="s1">&#39;ACD&#39;</span><span class="p">,</span> <span class="n">pH</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+<span class="go">-2.999...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">charge</span><span class="p">(</span><span class="s1">&#39;NNNNRKTNGDDSLF&#39;</span><span class="p">)</span>
+<span class="go">-2.90...</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span>
+<span class="normal">224</span>
+<span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">charge</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">pH</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">7</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the total charge of the sequence.</span>
+
+<span class="sd">    The method used is first described by Bjellqvist [Bjellqvist et al., 1993][https://analyticalsciencejournals.onlinelibrary.wiley.com/doi/10.1002/elps.11501401163].</span>
+<span class="sd">    The total charge is then calculated based on the Henderson-Hasselbach equation [Aronson, 1983](https://www.sciencedirect.com/science/article/pii/0307441283900468?via%3Dihub).</span>
+<span class="sd">    Pka of phosphoserine and phosphothreonine were retrieved from [Xie,Jiang &amp; Ben-Amotz, 2005](https://www.sciencedirect.com/science/article/pii/S0003269705004124?via%3Dihub).</span>
+<span class="sd">    Pka of phosphotyrosine was taken from [Wojciechowski M et al., 2003](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1302655/#:~:text=The%20pKa%20value%20for,et%20al.%2C%201994)</span>
+<span class="sd">    Pka of the posttranslational of arginine was kept equal to the pka of arginine, based on [Evich M et al.,2015](https://onlinelibrary.wiley.com/doi/full/10.1002/pro.2838)</span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+<span class="sd">    pH : float, optional</span>
+<span class="sd">        pH at which to calculate charge, by default 7.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        The total charge of the sequence.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; charge(&#39;ACD&#39;, pH=13)</span>
+<span class="sd">    -2.999...</span>
+<span class="sd">    &gt;&gt;&gt; charge(&#39;NNNNRKTNGDDSLF&#39;)</span>
+<span class="sd">    -2.90...</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">aa_counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">tokenized_peptide</span><span class="p">))</span>
+    <span class="n">aa_counts</span><span class="p">[</span><span class="s2">&quot;Nterm&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+    <span class="n">aa_counts</span><span class="p">[</span><span class="s2">&quot;Cterm&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+    <span class="n">pos_crs</span> <span class="o">=</span> <span class="p">{</span><span class="n">aa</span><span class="p">:</span> <span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="n">pk</span> <span class="o">-</span> <span class="n">pH</span><span class="p">)</span> <span class="k">for</span> <span class="n">aa</span><span class="p">,</span> <span class="n">pk</span> <span class="ow">in</span> <span class="n">biology</span><span class="o">.</span><span class="n">pos_pks</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="n">pos_partial_charges</span> <span class="o">=</span> <span class="p">{</span><span class="n">aa</span><span class="p">:</span> <span class="n">cr</span> <span class="o">/</span> <span class="p">(</span><span class="n">cr</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">aa</span><span class="p">,</span> <span class="n">cr</span> <span class="ow">in</span> <span class="n">pos_crs</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="n">pos_charge</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">aa_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">aa</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">*</span> <span class="n">pc</span> <span class="k">for</span> <span class="n">aa</span><span class="p">,</span> <span class="n">pc</span> <span class="ow">in</span> <span class="n">pos_partial_charges</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+    <span class="p">)</span>
+
+    <span class="n">neg_crs</span> <span class="o">=</span> <span class="p">{</span><span class="n">aa</span><span class="p">:</span> <span class="mi">10</span> <span class="o">**</span> <span class="p">(</span><span class="n">pH</span> <span class="o">-</span> <span class="n">pk</span><span class="p">)</span> <span class="k">for</span> <span class="n">aa</span><span class="p">,</span> <span class="n">pk</span> <span class="ow">in</span> <span class="n">biology</span><span class="o">.</span><span class="n">neg_pks</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="n">neg_partial_charges</span> <span class="o">=</span> <span class="p">{</span><span class="n">aa</span><span class="p">:</span> <span class="n">cr</span> <span class="o">/</span> <span class="p">(</span><span class="n">cr</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">aa</span><span class="p">,</span> <span class="n">cr</span> <span class="ow">in</span> <span class="n">neg_crs</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="n">neg_charge</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span>
+        <span class="p">[</span><span class="n">aa_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">aa</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">*</span> <span class="n">pc</span> <span class="k">for</span> <span class="n">aa</span><span class="p">,</span> <span class="n">pc</span> <span class="ow">in</span> <span class="n">neg_partial_charges</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">pos_charge</span> <span class="o">-</span> <span class="n">neg_charge</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.charge_density">
+<code class="highlight language-python"><span class="n">charge_density</span><span class="p">(</span><span class="n">peptide</span><span class="p">,</span> <span class="n">pH</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the charge of the peptide normalized by weight, <em>i.e.,</em> charge / molecular weight.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>pH</code></td>
+          <td>
+                <code>float, optional</code>
+          </td>
+          <td><p>pH at which to calculate charge, by default 7.</p></td>
+          <td>
+                <code>7</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Charge density.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">charge_density</span><span class="p">(</span><span class="s1">&#39;KTT_pNGD&#39;</span><span class="p">)</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">charge_density</span><span class="p">(</span><span class="s1">&#39;FPAL&#39;</span><span class="p">,</span> <span class="n">pH</span><span class="o">=</span><span class="mi">13</span><span class="p">)</span>
+<span class="go">-0.25</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span>
+<span class="normal">263</span>
+<span class="normal">264</span>
+<span class="normal">265</span>
+<span class="normal">266</span>
+<span class="normal">267</span>
+<span class="normal">268</span>
+<span class="normal">269</span>
+<span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">charge_density</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">pH</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">7</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the charge of the peptide normalized by weight, *i.e.,* charge / molecular weight.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+<span class="sd">    pH : float, optional</span>
+<span class="sd">        pH at which to calculate charge, by default 7.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Charge density.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; charge_density(&#39;KTT_pNGD&#39;)</span>
+<span class="sd">    0.0</span>
+<span class="sd">    &gt;&gt;&gt; charge_density(&#39;FPAL&#39;, pH=13)</span>
+<span class="sd">    -0.25</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">charge</span><span class="p">(</span><span class="n">peptide</span><span class="p">,</span> <span class="n">pH</span><span class="p">)</span> <span class="o">/</span> <span class="n">molecular_weight</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.compute_descriptors">
+<code class="highlight language-python"><span class="n">compute_descriptors</span><span class="p">(</span><span class="n">peptide</span><span class="p">,</span> <span class="n">descriptor_names</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pH</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Computes multiple descriptors of the peptide.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>descriptor_names</code></td>
+          <td>
+                <code><span title="typing.List">List</span>[str], optional</code>
+          </td>
+          <td><p>A List of descriptor names. If any of the descriptor names is invalid, ValueError is raised.
+Set to None by default, and computes all descriptors in this case.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>pH</code></td>
+          <td>
+                <code>float, optional</code>
+          </td>
+          <td><p>pH value to compute charge and charge density (if requested), by default 7</p></td>
+          <td>
+                <code>7</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Dict">Dict</span>[str, <span title="typing.Union">Union</span>[float, int]]</code>
+          </td>
+          <td><p>A dictionary that maps descriptor names to their values.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Raises:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>ValueError</code>
+          </td>
+          <td><p>ValueError is raised if any of the descriptor names is invalid.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">compute_descriptors</span><span class="p">(</span><span class="s1">&#39;ACD&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;charge&#39;</span><span class="p">,</span> <span class="s1">&#39;charge_density&#39;</span><span class="p">],</span> <span class="mi">13</span><span class="p">)</span>
+<span class="go">{&#39;charge&#39;: -3.0, &#39;charge_density&#39;: -1.0}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">test_output</span><span class="o">==</span><span class="n">compute_descriptors</span><span class="p">(</span><span class="s1">&#39;STY&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;molecular_formula&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">expected_output</span><span class="o">==</span><span class="p">{</span><span class="s1">&#39;n_C&#39;</span><span class="p">:</span> <span class="mi">16</span><span class="p">,</span> <span class="s1">&#39;n_H&#39;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span> <span class="s1">&#39;n_N&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;n_O&#39;</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> <span class="s1">&#39;n_S&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;n_P&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">test_output</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="k">assert</span> <span class="n">v</span> <span class="o">==</span> <span class="n">expected_output</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">640</span>
+<span class="normal">641</span>
+<span class="normal">642</span>
+<span class="normal">643</span>
+<span class="normal">644</span>
+<span class="normal">645</span>
+<span class="normal">646</span>
+<span class="normal">647</span>
+<span class="normal">648</span>
+<span class="normal">649</span>
+<span class="normal">650</span>
+<span class="normal">651</span>
+<span class="normal">652</span>
+<span class="normal">653</span>
+<span class="normal">654</span>
+<span class="normal">655</span>
+<span class="normal">656</span>
+<span class="normal">657</span>
+<span class="normal">658</span>
+<span class="normal">659</span>
+<span class="normal">660</span>
+<span class="normal">661</span>
+<span class="normal">662</span>
+<span class="normal">663</span>
+<span class="normal">664</span>
+<span class="normal">665</span>
+<span class="normal">666</span>
+<span class="normal">667</span>
+<span class="normal">668</span>
+<span class="normal">669</span>
+<span class="normal">670</span>
+<span class="normal">671</span>
+<span class="normal">672</span>
+<span class="normal">673</span>
+<span class="normal">674</span>
+<span class="normal">675</span>
+<span class="normal">676</span>
+<span class="normal">677</span>
+<span class="normal">678</span>
+<span class="normal">679</span>
+<span class="normal">680</span>
+<span class="normal">681</span>
+<span class="normal">682</span>
+<span class="normal">683</span>
+<span class="normal">684</span>
+<span class="normal">685</span>
+<span class="normal">686</span>
+<span class="normal">687</span>
+<span class="normal">688</span>
+<span class="normal">689</span>
+<span class="normal">690</span>
+<span class="normal">691</span>
+<span class="normal">692</span>
+<span class="normal">693</span>
+<span class="normal">694</span>
+<span class="normal">695</span>
+<span class="normal">696</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">compute_descriptors</span><span class="p">(</span>
+    <span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">descriptor_names</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">pH</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">]]:</span>
+    <span class="sd">&quot;&quot;&quot;Computes multiple descriptors of the peptide.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+<span class="sd">    descriptor_names : List[str], optional</span>
+<span class="sd">        A List of descriptor names. If any of the descriptor names is invalid, ValueError is raised.</span>
+<span class="sd">        Set to None by default, and computes all descriptors in this case.</span>
+<span class="sd">    pH : float, optional</span>
+<span class="sd">        pH value to compute charge and charge density (if requested), by default 7</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    ----------</span>
+<span class="sd">    Dict[str, Union[float, int]]</span>
+<span class="sd">        A dictionary that maps descriptor names to their values.</span>
+
+<span class="sd">    Raises</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ValueError</span>
+<span class="sd">        ValueError is raised if any of the descriptor names is invalid.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    ----------</span>
+<span class="sd">    &gt;&gt;&gt; compute_descriptors(&#39;ACD&#39;, [&#39;charge&#39;, &#39;charge_density&#39;], 13)</span>
+<span class="sd">    {&#39;charge&#39;: -3.0, &#39;charge_density&#39;: -1.0}</span>
+<span class="sd">    &gt;&gt;&gt; test_output==compute_descriptors(&#39;STY&#39;, [&#39;molecular_formula&#39;])</span>
+<span class="sd">    &gt;&gt;&gt; expected_output=={&#39;n_C&#39;: 16, &#39;n_H&#39;: 23, &#39;n_N&#39;: 3, &#39;n_O&#39;: 7, &#39;n_S&#39;: 0, &#39;n_P&#39;: 0}</span>
+<span class="sd">    &gt;&gt;&gt; for k, v in test_output.items():</span>
+<span class="sd">    ...     assert v == expected_output[k]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">descriptor_names</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">descriptor_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">__DESCRIPTOR_FNS</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+
+    <span class="n">diff</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">descriptor_names</span><span class="p">)</span> <span class="o">-</span> <span class="nb">set</span><span class="p">(</span><span class="n">__DESCRIPTOR_FNS</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Invalid descriptor names: </span><span class="si">{</span><span class="n">diff</span><span class="si">}</span><span class="s2">. Possible names are: </span><span class="si">{</span><span class="nb">list</span><span class="p">(</span><span class="n">__DESCRIPTOR_FNS</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="p">)</span>
+
+    <span class="n">name_to_descriptor</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">descriptor_names</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;charge&quot;</span><span class="p">,</span> <span class="s2">&quot;charge_density&quot;</span><span class="p">]:</span>
+            <span class="n">name_to_descriptor</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">__DESCRIPTOR_FNS</span><span class="p">[</span><span class="n">name</span><span class="p">](</span><span class="n">peptide</span><span class="p">,</span> <span class="n">pH</span><span class="o">=</span><span class="n">pH</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;aminoacid_frequencies&quot;</span><span class="p">,</span> <span class="s2">&quot;molecular_formula&quot;</span><span class="p">]:</span>
+            <span class="n">name_to_descriptor</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="o">**</span><span class="n">name_to_descriptor</span><span class="p">,</span>
+                <span class="o">**</span><span class="n">__DESCRIPTOR_FNS</span><span class="p">[</span><span class="n">name</span><span class="p">](</span><span class="n">peptide</span><span class="p">),</span>
+            <span class="p">}</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">name_to_descriptor</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">__DESCRIPTOR_FNS</span><span class="p">[</span><span class="n">name</span><span class="p">](</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">name_to_descriptor</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.hydrophobic_aa_ratio">
+<code class="highlight language-python"><span class="n">hydrophobic_aa_ratio</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the total ratio of hydrophobic amino-acids (A, C, C_m, F, I, L, M, and V) in a peptide.
+(<a href="https://mis.kp.ac.rw/admin/admin_panel/kp_lms/files/digital/Core%20Books/Core%20Books%20In%20Nursing%20%20And%20%20Midwifery/H106_%20Biochemistry_Lehninger%20Principles%20of%20Biochemistry,%20Fourth%20Edition%20-%20David%20L.%20Nelson,%20Michael%20M.%20Cox.pdf">Nelson &amp; Cox, 2004</a>)</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Total ratio of hydrophobic amino-acids of the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">hydrophobic_aa_ratio</span><span class="p">(</span><span class="s1">&#39;FC_mPR_mS_pA&#39;</span><span class="p">)</span>
+<span class="go">0.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hydrophobic_aa_ratio</span><span class="p">(</span><span class="s1">&#39;FPR_mXS_pA&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Unknown amino acid(s) in peptide: {&#39;X&#39;}</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span>
+<span class="normal">292</span>
+<span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">hydrophobic_aa_ratio</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the total ratio of hydrophobic amino-acids (A, C, C_m, F, I, L, M, and V) in a peptide.</span>
+<span class="sd">    ([Nelson &amp; Cox, 2004](https://mis.kp.ac.rw/admin/admin_panel/kp_lms/files/digital/Core%20Books/Core%20Books%20In%20Nursing%20%20And%20%20Midwifery/H106_%20Biochemistry_Lehninger%20Principles%20of%20Biochemistry,%20Fourth%20Edition%20-%20David%20L.%20Nelson,%20Michael%20M.%20Cox.pdf))</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Total ratio of hydrophobic amino-acids of the peptide.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; hydrophobic_aa_ratio(&#39;FC_mPR_mS_pA&#39;)</span>
+<span class="sd">    0.5</span>
+<span class="sd">    &gt;&gt;&gt; hydrophobic_aa_ratio(&#39;FPR_mXS_pA&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: Unknown amino acid(s) in peptide: {&#39;X&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">aa_counts</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">tokenized_peptide</span><span class="p">))</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">aa_counts</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">aa</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">biology</span><span class="o">.</span><span class="n">hydrophobic_aas</span><span class="p">])</span> <span class="o">/</span> <span class="n">length</span><span class="p">(</span>
+        <span class="n">peptide</span>
+    <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.instability_index">
+<code class="highlight language-python"><span class="n">instability_index</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the instability index of the peptide.</p>
+<p>The instability index is based on amino acid compositions and computed by summing the instability coefficient
+of all dipeptide combinations in the peptide. It is based on the frequency of the dipeptide
+occurring in stable versus unstable proteins <a href="https://academic.oup.com/peds/article-abstract/4/2/155/1491271">Guruprasad, Reddy &amp; Pandit, 1990</a>.
+A value of 1 is used for amino acid pairs whose instability coefficient is unavailable.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="c1"># from https://rdrr.io/cran/Peptides/src/R/boman.R</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">instability_index</span><span class="p">(</span><span class="s1">&#39;ACFEGM&#39;</span><span class="p">)</span>
+<span class="go">81.566...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">instability_index</span><span class="p">(</span><span class="s1">&#39;FPP_mS_pA&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Unknown amino acid(s) in peptide: {&#39;P_m&#39;}</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">306</span>
+<span class="normal">307</span>
+<span class="normal">308</span>
+<span class="normal">309</span>
+<span class="normal">310</span>
+<span class="normal">311</span>
+<span class="normal">312</span>
+<span class="normal">313</span>
+<span class="normal">314</span>
+<span class="normal">315</span>
+<span class="normal">316</span>
+<span class="normal">317</span>
+<span class="normal">318</span>
+<span class="normal">319</span>
+<span class="normal">320</span>
+<span class="normal">321</span>
+<span class="normal">322</span>
+<span class="normal">323</span>
+<span class="normal">324</span>
+<span class="normal">325</span>
+<span class="normal">326</span>
+<span class="normal">327</span>
+<span class="normal">328</span>
+<span class="normal">329</span>
+<span class="normal">330</span>
+<span class="normal">331</span>
+<span class="normal">332</span>
+<span class="normal">333</span>
+<span class="normal">334</span>
+<span class="normal">335</span>
+<span class="normal">336</span>
+<span class="normal">337</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">instability_index</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the instability index of the peptide.</span>
+
+<span class="sd">    The instability index is based on amino acid compositions and computed by summing the instability coefficient</span>
+<span class="sd">    of all dipeptide combinations in the peptide. It is based on the frequency of the dipeptide</span>
+<span class="sd">    occurring in stable versus unstable proteins [Guruprasad, Reddy &amp; Pandit, 1990](https://academic.oup.com/peds/article-abstract/4/2/155/1491271).</span>
+<span class="sd">    A value of 1 is used for amino acid pairs whose instability coefficient is unavailable.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; # from https://rdrr.io/cran/Peptides/src/R/boman.R</span>
+<span class="sd">    &gt;&gt;&gt; instability_index(&#39;ACFEGM&#39;)</span>
+<span class="sd">    81.566...</span>
+<span class="sd">    &gt;&gt;&gt; instability_index(&#39;FPP_mS_pA&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: Unknown amino acid(s) in peptide: {&#39;P_m&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">aa_pairs</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">tokenized_peptide</span><span class="p">,</span> <span class="n">tokenized_peptide</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+    <span class="n">instabilities</span> <span class="o">=</span> <span class="p">[</span><span class="n">biology</span><span class="o">.</span><span class="n">instabilities</span><span class="p">[</span><span class="n">aa1</span><span class="p">][</span><span class="n">aa2</span><span class="p">]</span> <span class="k">for</span> <span class="n">aa1</span><span class="p">,</span> <span class="n">aa2</span> <span class="ow">in</span> <span class="n">aa_pairs</span><span class="p">]</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">instabilities</span><span class="p">)</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">/</span> <span class="n">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.isoelectric_point">
+<code class="highlight language-python"><span class="n">isoelectric_point</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the isoelectric point (pH that the peptide carries no net charge) of the peptide.</p>
+<p>The isoelectric point is calculated using the peptide charge at different pH values.
+The method used is based on the Henderson-Hasselbach equation <a href="https://www.sciencedirect.com/science/article/pii/0307441283900468?via%3Dihub">Aronson, 1983</a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Isoelectric point of the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">isoelectric_point</span><span class="p">(</span><span class="s1">&#39;ADEFGHI&#39;</span><span class="p">)</span>
+<span class="go">3.92...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">isoelectric_point</span><span class="p">(</span><span class="s1">&#39;K_aMSTV&#39;</span><span class="p">)</span>
+<span class="go">3.44...</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">340</span>
+<span class="normal">341</span>
+<span class="normal">342</span>
+<span class="normal">343</span>
+<span class="normal">344</span>
+<span class="normal">345</span>
+<span class="normal">346</span>
+<span class="normal">347</span>
+<span class="normal">348</span>
+<span class="normal">349</span>
+<span class="normal">350</span>
+<span class="normal">351</span>
+<span class="normal">352</span>
+<span class="normal">353</span>
+<span class="normal">354</span>
+<span class="normal">355</span>
+<span class="normal">356</span>
+<span class="normal">357</span>
+<span class="normal">358</span>
+<span class="normal">359</span>
+<span class="normal">360</span>
+<span class="normal">361</span>
+<span class="normal">362</span>
+<span class="normal">363</span>
+<span class="normal">364</span>
+<span class="normal">365</span>
+<span class="normal">366</span>
+<span class="normal">367</span>
+<span class="normal">368</span>
+<span class="normal">369</span>
+<span class="normal">370</span>
+<span class="normal">371</span>
+<span class="normal">372</span>
+<span class="normal">373</span>
+<span class="normal">374</span>
+<span class="normal">375</span>
+<span class="normal">376</span>
+<span class="normal">377</span>
+<span class="normal">378</span>
+<span class="normal">379</span>
+<span class="normal">380</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">isoelectric_point</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the isoelectric point (pH that the peptide carries no net charge) of the peptide.</span>
+
+<span class="sd">    The isoelectric point is calculated using the peptide charge at different pH values.</span>
+<span class="sd">    The method used is based on the Henderson-Hasselbach equation [Aronson, 1983](https://www.sciencedirect.com/science/article/pii/0307441283900468?via%3Dihub).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Isoelectric point of the peptide.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; isoelectric_point(&#39;ADEFGHI&#39;)</span>
+<span class="sd">    3.92...</span>
+<span class="sd">    &gt;&gt;&gt; isoelectric_point(&#39;K_aMSTV&#39;)</span>
+<span class="sd">    3.44...</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">test_ph</span> <span class="o">=</span> <span class="mi">7</span>
+    <span class="n">peptide_charge</span> <span class="o">=</span> <span class="n">charge</span><span class="p">(</span><span class="n">peptide</span><span class="p">,</span> <span class="n">test_ph</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">peptide_charge</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">lower_limit</span><span class="p">,</span> <span class="n">upper_limit</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">7</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">lower_limit</span><span class="p">,</span> <span class="n">upper_limit</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">14</span>
+
+    <span class="n">precision</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">4</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">upper_limit</span> <span class="o">-</span> <span class="n">lower_limit</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">precision</span> <span class="ow">and</span> <span class="nb">abs</span><span class="p">(</span><span class="n">peptide_charge</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">precision</span><span class="p">:</span>
+        <span class="n">test_ph</span> <span class="o">=</span> <span class="p">(</span><span class="n">upper_limit</span> <span class="o">+</span> <span class="n">lower_limit</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+        <span class="n">peptide_charge</span> <span class="o">=</span> <span class="n">charge</span><span class="p">(</span><span class="n">peptide</span><span class="p">,</span> <span class="n">test_ph</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">peptide_charge</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">upper_limit</span> <span class="o">=</span> <span class="n">test_ph</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">lower_limit</span> <span class="o">=</span> <span class="n">test_ph</span>
+
+    <span class="k">return</span> <span class="n">test_ph</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.length">
+<code class="highlight language-python"><span class="n">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the number of amino acids in the peptide.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>int</code>
+          </td>
+          <td><p>Number of amino acids in the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">length</span><span class="p">(</span><span class="s1">&#39;ACD&#39;</span><span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">length</span><span class="p">(</span><span class="s1">&#39;C_mS_pADDWY&#39;</span><span class="p">)</span>
+<span class="go">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">length</span><span class="p">(</span><span class="s1">&#39;FP_mS_pA&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Unknown amino acid(s) in peptide: {&#39;P_m&#39;}</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">383</span>
+<span class="normal">384</span>
+<span class="normal">385</span>
+<span class="normal">386</span>
+<span class="normal">387</span>
+<span class="normal">388</span>
+<span class="normal">389</span>
+<span class="normal">390</span>
+<span class="normal">391</span>
+<span class="normal">392</span>
+<span class="normal">393</span>
+<span class="normal">394</span>
+<span class="normal">395</span>
+<span class="normal">396</span>
+<span class="normal">397</span>
+<span class="normal">398</span>
+<span class="normal">399</span>
+<span class="normal">400</span>
+<span class="normal">401</span>
+<span class="normal">402</span>
+<span class="normal">403</span>
+<span class="normal">404</span>
+<span class="normal">405</span>
+<span class="normal">406</span>
+<span class="normal">407</span>
+<span class="normal">408</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">int</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the number of amino acids in the peptide.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    int</span>
+<span class="sd">        Number of amino acids in the peptide.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; length(&#39;ACD&#39;)</span>
+<span class="sd">    3</span>
+<span class="sd">    &gt;&gt;&gt; length(&#39;C_mS_pADDWY&#39;)</span>
+<span class="sd">    7</span>
+<span class="sd">    &gt;&gt;&gt; length(&#39;FP_mS_pA&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: Unknown amino acid(s) in peptide: {&#39;P_m&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.molecular_formula">
+<code class="highlight language-python"><span class="n">molecular_formula</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Determine the closed molecular formula of the amino acid sequence of the peptide.</p>
+<p>The peptide bonds between amino acids are included in the formula. Molecular formulas
+were retrieved from <a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing.Dict">Dict</span>[str, int]</code>
+          </td>
+          <td><p>Count of each element in the peptide where the element symbols are keys and counts are values.
+The keys have the format <code>n_&lt;element&gt;</code> (<code>element</code> = element symbol).</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">formula</span> <span class="o">=</span> <span class="n">molecular_formula</span><span class="p">(</span><span class="s1">&#39;ADEF&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">formula</span><span class="p">[</span><span class="s1">&#39;n_H&#39;</span><span class="p">]</span>
+<span class="go">28</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">formula</span><span class="p">[</span><span class="s1">&#39;n_O&#39;</span><span class="p">]</span>
+<span class="go">9</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">formula</span><span class="p">[</span><span class="s1">&#39;n_S&#39;</span><span class="p">]</span>
+<span class="go">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">formula</span> <span class="o">=</span> <span class="n">molecular_formula</span><span class="p">(</span><span class="s1">&#39;PTHRAAPDES&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">formula</span><span class="p">[</span><span class="s1">&#39;n_H&#39;</span><span class="p">]</span>
+<span class="go">69</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">formula</span><span class="p">[</span><span class="s1">&#39;n_O&#39;</span><span class="p">]</span>
+<span class="go">17</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">formula</span><span class="p">[</span><span class="s1">&#39;n_S&#39;</span><span class="p">]</span>
+<span class="go">0</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">411</span>
+<span class="normal">412</span>
+<span class="normal">413</span>
+<span class="normal">414</span>
+<span class="normal">415</span>
+<span class="normal">416</span>
+<span class="normal">417</span>
+<span class="normal">418</span>
+<span class="normal">419</span>
+<span class="normal">420</span>
+<span class="normal">421</span>
+<span class="normal">422</span>
+<span class="normal">423</span>
+<span class="normal">424</span>
+<span class="normal">425</span>
+<span class="normal">426</span>
+<span class="normal">427</span>
+<span class="normal">428</span>
+<span class="normal">429</span>
+<span class="normal">430</span>
+<span class="normal">431</span>
+<span class="normal">432</span>
+<span class="normal">433</span>
+<span class="normal">434</span>
+<span class="normal">435</span>
+<span class="normal">436</span>
+<span class="normal">437</span>
+<span class="normal">438</span>
+<span class="normal">439</span>
+<span class="normal">440</span>
+<span class="normal">441</span>
+<span class="normal">442</span>
+<span class="normal">443</span>
+<span class="normal">444</span>
+<span class="normal">445</span>
+<span class="normal">446</span>
+<span class="normal">447</span>
+<span class="normal">448</span>
+<span class="normal">449</span>
+<span class="normal">450</span>
+<span class="normal">451</span>
+<span class="normal">452</span>
+<span class="normal">453</span>
+<span class="normal">454</span>
+<span class="normal">455</span>
+<span class="normal">456</span>
+<span class="normal">457</span>
+<span class="normal">458</span>
+<span class="normal">459</span>
+<span class="normal">460</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">molecular_formula</span><span class="p">(</span>
+    <span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Determine the closed molecular formula of the amino acid sequence of the peptide.</span>
+
+<span class="sd">    The peptide bonds between amino acids are included in the formula. Molecular formulas</span>
+<span class="sd">    were retrieved from [PubChem](https://pubchem.ncbi.nlm.nih.gov/).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    Dict[str, int]</span>
+<span class="sd">        Count of each element in the peptide where the element symbols are keys and counts are values.</span>
+<span class="sd">        The keys have the format `n_&lt;element&gt;` (`element` = element symbol).</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; formula = molecular_formula(&#39;ADEF&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; formula[&#39;n_H&#39;]</span>
+<span class="sd">    28</span>
+<span class="sd">    &gt;&gt;&gt; formula[&#39;n_O&#39;]</span>
+<span class="sd">    9</span>
+<span class="sd">    &gt;&gt;&gt; formula[&#39;n_S&#39;]</span>
+<span class="sd">    0</span>
+<span class="sd">    &gt;&gt;&gt; formula = molecular_formula(&#39;PTHRAAPDES&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; formula[&#39;n_H&#39;]</span>
+<span class="sd">    69</span>
+<span class="sd">    &gt;&gt;&gt; formula[&#39;n_O&#39;]</span>
+<span class="sd">    17</span>
+<span class="sd">    &gt;&gt;&gt; formula[&#39;n_S&#39;]</span>
+<span class="sd">    0</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">aa_formulas</span> <span class="o">=</span> <span class="p">[</span><span class="n">Counter</span><span class="p">(</span><span class="n">biology</span><span class="o">.</span><span class="n">formulas</span><span class="p">[</span><span class="n">aa</span><span class="p">])</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">tokenized_peptide</span><span class="p">]</span>
+    <span class="n">elements</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;N&quot;</span><span class="p">,</span> <span class="s2">&quot;O&quot;</span><span class="p">,</span> <span class="s2">&quot;S&quot;</span><span class="p">,</span> <span class="s2">&quot;P&quot;</span><span class="p">]</span>
+    <span class="n">peptide_formula</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">elements</span><span class="p">:</span>
+        <span class="n">peptide_formula</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;n_</span><span class="si">{</span><span class="n">element</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span>
+            <span class="p">[</span><span class="n">formula</span><span class="p">[</span><span class="n">element</span><span class="p">]</span> <span class="k">for</span> <span class="n">formula</span> <span class="ow">in</span> <span class="n">aa_formulas</span><span class="p">]</span>
+        <span class="p">)</span>
+
+    <span class="n">peptide_formula</span><span class="p">[</span><span class="s2">&quot;n_H&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">peptide_formula</span><span class="p">[</span><span class="s2">&quot;n_H&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="n">peptide_formula</span><span class="p">[</span><span class="s2">&quot;n_O&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">peptide_formula</span><span class="p">[</span><span class="s2">&quot;n_O&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="n">peptide_formula</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.molecular_weight">
+<code class="highlight language-python"><span class="n">molecular_weight</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the weight (g/mol) of the peptide without peptide bonds.</p>
+<p>The molecular weight of the peptide is calculated by summing the weights of the amino acids and
+subtracting the weight of water for each peptide bond. Molecular weight were retrieved from <a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Molecular weight of the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">molecular_weight</span><span class="p">(</span><span class="s1">&#39;RMK_aS_pCD&#39;</span><span class="p">)</span>
+<span class="go">860.885</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">molecular_weight</span><span class="p">(</span><span class="s1">&#39;DEGHI&#39;</span><span class="p">)</span>
+<span class="go">569.56</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">463</span>
+<span class="normal">464</span>
+<span class="normal">465</span>
+<span class="normal">466</span>
+<span class="normal">467</span>
+<span class="normal">468</span>
+<span class="normal">469</span>
+<span class="normal">470</span>
+<span class="normal">471</span>
+<span class="normal">472</span>
+<span class="normal">473</span>
+<span class="normal">474</span>
+<span class="normal">475</span>
+<span class="normal">476</span>
+<span class="normal">477</span>
+<span class="normal">478</span>
+<span class="normal">479</span>
+<span class="normal">480</span>
+<span class="normal">481</span>
+<span class="normal">482</span>
+<span class="normal">483</span>
+<span class="normal">484</span>
+<span class="normal">485</span>
+<span class="normal">486</span>
+<span class="normal">487</span>
+<span class="normal">488</span>
+<span class="normal">489</span>
+<span class="normal">490</span>
+<span class="normal">491</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">molecular_weight</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the weight (g/mol) of the peptide without peptide bonds.</span>
+
+<span class="sd">    The molecular weight of the peptide is calculated by summing the weights of the amino acids and</span>
+<span class="sd">    subtracting the weight of water for each peptide bond. Molecular weight were retrieved from [PubChem](https://pubchem.ncbi.nlm.nih.gov/).</span>
+
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Molecular weight of the peptide.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; molecular_weight(&#39;RMK_aS_pCD&#39;)</span>
+<span class="sd">    860.885</span>
+<span class="sd">    &gt;&gt;&gt; molecular_weight(&#39;DEGHI&#39;)</span>
+<span class="sd">    569.56</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">total_weight</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">biology</span><span class="o">.</span><span class="n">weights</span><span class="p">[</span><span class="n">aa</span><span class="p">]</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">tokenized_peptide</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">total_weight</span> <span class="o">-</span> <span class="mf">18.015</span> <span class="o">*</span> <span class="p">(</span><span class="n">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.n_h_acceptors">
+<code class="highlight language-python"><span class="n">n_h_acceptors</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the total number of hydrogen bond acceptors in the peptide.</p>
+<p>The number of hydrogen bond acceptors in the peptide is calculated by summing the number of hydrogen bond acceptors.
+Hydrogen bonds are important in protein-protein interactions <a href="https://doi.org/10.1002/9780470015902.a0003011.pub2">Hubbard &amp; Haider, 2010</a>.
+The number of hydrogen bond acceptors for each amino acid were retrieved from <a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Total number of hydrogen bond acceptors in the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">n_h_acceptors</span><span class="p">(</span><span class="s1">&#39;FSCA&#39;</span><span class="p">)</span>
+<span class="go">14</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">n_h_acceptors</span><span class="p">(</span><span class="s1">&#39;FXS_pGNM&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Unknown amino acid(s) in peptide: {&#39;X&#39;}</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">494</span>
+<span class="normal">495</span>
+<span class="normal">496</span>
+<span class="normal">497</span>
+<span class="normal">498</span>
+<span class="normal">499</span>
+<span class="normal">500</span>
+<span class="normal">501</span>
+<span class="normal">502</span>
+<span class="normal">503</span>
+<span class="normal">504</span>
+<span class="normal">505</span>
+<span class="normal">506</span>
+<span class="normal">507</span>
+<span class="normal">508</span>
+<span class="normal">509</span>
+<span class="normal">510</span>
+<span class="normal">511</span>
+<span class="normal">512</span>
+<span class="normal">513</span>
+<span class="normal">514</span>
+<span class="normal">515</span>
+<span class="normal">516</span>
+<span class="normal">517</span>
+<span class="normal">518</span>
+<span class="normal">519</span>
+<span class="normal">520</span>
+<span class="normal">521</span>
+<span class="normal">522</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">n_h_acceptors</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the total number of hydrogen bond acceptors in the peptide.</span>
+
+<span class="sd">    The number of hydrogen bond acceptors in the peptide is calculated by summing the number of hydrogen bond acceptors.</span>
+<span class="sd">    Hydrogen bonds are important in protein-protein interactions [Hubbard &amp; Haider, 2010](https://doi.org/10.1002/9780470015902.a0003011.pub2).</span>
+<span class="sd">    The number of hydrogen bond acceptors for each amino acid were retrieved from [PubChem](https://pubchem.ncbi.nlm.nih.gov/).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Total number of hydrogen bond acceptors in the peptide.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; n_h_acceptors(&#39;FSCA&#39;)</span>
+<span class="sd">    14</span>
+<span class="sd">    &gt;&gt;&gt; n_h_acceptors(&#39;FXS_pGNM&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: Unknown amino acid(s) in peptide: {&#39;X&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">biology</span><span class="o">.</span><span class="n">n_h_acceptors</span><span class="p">[</span><span class="n">aa</span><span class="p">]</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">tokenized_peptide</span><span class="p">])</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.n_h_donors">
+<code class="highlight language-python"><span class="n">n_h_donors</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the total number of hydrogen bond donors in the peptide.</p>
+<p>Hydrogen bonds are important in protein-protein interactions <a href="https://doi.org/10.1002/9780470015902.a0003011.pub2">Hubbard &amp; Haider, 2010</a>.
+The number of hydrogen bond donors for each amino acid were retrieved from <a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Total number of hydrogen bond donors in the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">n_h_donors</span><span class="p">(</span><span class="s1">&#39;VYP&#39;</span><span class="p">)</span>
+<span class="go">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">n_h_donors</span><span class="p">(</span><span class="s1">&#39;PGU&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Unknown amino acid(s) in peptide: {&#39;U&#39;}</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">525</span>
+<span class="normal">526</span>
+<span class="normal">527</span>
+<span class="normal">528</span>
+<span class="normal">529</span>
+<span class="normal">530</span>
+<span class="normal">531</span>
+<span class="normal">532</span>
+<span class="normal">533</span>
+<span class="normal">534</span>
+<span class="normal">535</span>
+<span class="normal">536</span>
+<span class="normal">537</span>
+<span class="normal">538</span>
+<span class="normal">539</span>
+<span class="normal">540</span>
+<span class="normal">541</span>
+<span class="normal">542</span>
+<span class="normal">543</span>
+<span class="normal">544</span>
+<span class="normal">545</span>
+<span class="normal">546</span>
+<span class="normal">547</span>
+<span class="normal">548</span>
+<span class="normal">549</span>
+<span class="normal">550</span>
+<span class="normal">551</span>
+<span class="normal">552</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">n_h_donors</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the total number of hydrogen bond donors in the peptide.</span>
+
+<span class="sd">    Hydrogen bonds are important in protein-protein interactions [Hubbard &amp; Haider, 2010](https://doi.org/10.1002/9780470015902.a0003011.pub2).</span>
+<span class="sd">    The number of hydrogen bond donors for each amino acid were retrieved from [PubChem](https://pubchem.ncbi.nlm.nih.gov/).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    float</span>
+<span class="sd">        Total number of hydrogen bond donors in the peptide.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; n_h_donors(&#39;VYP&#39;)</span>
+<span class="sd">    7</span>
+<span class="sd">    &gt;&gt;&gt; n_h_donors(&#39;PGU&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: Unknown amino acid(s) in peptide: {&#39;U&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">sum</span><span class="p">([</span><span class="n">biology</span><span class="o">.</span><span class="n">n_h_donors</span><span class="p">[</span><span class="n">aa</span><span class="p">]</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">tokenized_peptide</span><span class="p">])</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.topological_polar_surface_area">
+<code class="highlight language-python"><span class="n">topological_polar_surface_area</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the total topological polar surface area of the peptide.</p>
+<p>The topological polar surface area relates to the Van der Waals forces <a href="https://pubs.acs.org/doi/10.1021/acsomega.3c00205">Adhav &amp; Saikrishnan, 2023</a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>Total topological polar surface area of the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">topological_polar_surface_area</span><span class="p">(</span><span class="s1">&#39;R_dPSRMNPAWE&#39;</span><span class="p">)</span>
+<span class="go">853.19...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">topological_polar_surface_area</span><span class="p">(</span><span class="s1">&#39;AYZ&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Unknown amino acid(s) in peptide: {&#39;Z&#39;}</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">555</span>
+<span class="normal">556</span>
+<span class="normal">557</span>
+<span class="normal">558</span>
+<span class="normal">559</span>
+<span class="normal">560</span>
+<span class="normal">561</span>
+<span class="normal">562</span>
+<span class="normal">563</span>
+<span class="normal">564</span>
+<span class="normal">565</span>
+<span class="normal">566</span>
+<span class="normal">567</span>
+<span class="normal">568</span>
+<span class="normal">569</span>
+<span class="normal">570</span>
+<span class="normal">571</span>
+<span class="normal">572</span>
+<span class="normal">573</span>
+<span class="normal">574</span>
+<span class="normal">575</span>
+<span class="normal">576</span>
+<span class="normal">577</span>
+<span class="normal">578</span>
+<span class="normal">579</span>
+<span class="normal">580</span>
+<span class="normal">581</span>
+<span class="normal">582</span>
+<span class="normal">583</span>
+<span class="normal">584</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">topological_polar_surface_area</span><span class="p">(</span>
+    <span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the total topological polar surface area of the peptide.</span>
+
+<span class="sd">    The topological polar surface area relates to the Van der Waals forces [Adhav &amp; Saikrishnan, 2023](https://pubs.acs.org/doi/10.1021/acsomega.3c00205).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    ----------</span>
+<span class="sd">    float</span>
+<span class="sd">        Total topological polar surface area of the peptide.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    ----------</span>
+<span class="sd">    &gt;&gt;&gt; topological_polar_surface_area(&#39;R_dPSRMNPAWE&#39;)</span>
+<span class="sd">    853.19...</span>
+<span class="sd">    &gt;&gt;&gt; topological_polar_surface_area(&#39;AYZ&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: Unknown amino acid(s) in peptide: {&#39;Z&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">total_surface</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="n">biology</span><span class="o">.</span><span class="n">tpsas</span><span class="p">[</span><span class="n">aa</span><span class="p">]</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">tokenized_peptide</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">total_surface</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 class="doc doc-heading" id="peptidy.descriptors.x_logp_energy">
+<code class="highlight language-python"><span class="n">x_logp_energy</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Calculate the sum of xlogP index of the peptide divided by the length of the peptide.</p>
+<p>The xlogP index is a measure of the hydrophobicity of the peptide <a href="https://pubs.acs.org/doi/10.1021/ci700257y">Chen et al, 2007</a>
+and the indices per amino acid was retrieved from <a href="https://pubchem.ncbi.nlm.nih.gov/">PubChem</a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>peptide</code></td>
+          <td>
+                <code>str</code>
+          </td>
+          <td><p>Amino acid sequence of the peptide.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>float</code>
+          </td>
+          <td><p>xlogP index of the peptide.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">x_logp_energy</span><span class="p">(</span><span class="s1">&#39;R_dPSRMNPAWE&#39;</span><span class="p">)</span>
+<span class="go">2.9</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x_logp_energy</span><span class="p">(</span><span class="s1">&#39;BCAF&#39;</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">ValueError</span>: <span class="n">Unknown amino acid(s) in peptide: {&#39;B&#39;}</span>
+</code></pre></div>
+
+      <details class="quote">
+        <summary>Source code in <code>peptidy/descriptors.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">587</span>
+<span class="normal">588</span>
+<span class="normal">589</span>
+<span class="normal">590</span>
+<span class="normal">591</span>
+<span class="normal">592</span>
+<span class="normal">593</span>
+<span class="normal">594</span>
+<span class="normal">595</span>
+<span class="normal">596</span>
+<span class="normal">597</span>
+<span class="normal">598</span>
+<span class="normal">599</span>
+<span class="normal">600</span>
+<span class="normal">601</span>
+<span class="normal">602</span>
+<span class="normal">603</span>
+<span class="normal">604</span>
+<span class="normal">605</span>
+<span class="normal">606</span>
+<span class="normal">607</span>
+<span class="normal">608</span>
+<span class="normal">609</span>
+<span class="normal">610</span>
+<span class="normal">611</span>
+<span class="normal">612</span>
+<span class="normal">613</span>
+<span class="normal">614</span>
+<span class="normal">615</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">x_logp_energy</span><span class="p">(</span><span class="n">peptide</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate the sum of xlogP index of the peptide divided by the length of the peptide.</span>
+
+<span class="sd">    The xlogP index is a measure of the hydrophobicity of the peptide [Chen et al, 2007](https://pubs.acs.org/doi/10.1021/ci700257y)</span>
+<span class="sd">    and the indices per amino acid was retrieved from [PubChem](https://pubchem.ncbi.nlm.nih.gov/).</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    peptide : str</span>
+<span class="sd">        Amino acid sequence of the peptide.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    ----------</span>
+<span class="sd">    float</span>
+<span class="sd">        xlogP index of the peptide.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    ----------</span>
+<span class="sd">    &gt;&gt;&gt; x_logp_energy(&#39;R_dPSRMNPAWE&#39;)</span>
+<span class="sd">    2.9</span>
+<span class="sd">    &gt;&gt;&gt; x_logp_energy(&#39;BCAF&#39;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: Unknown amino acid(s) in peptide: {&#39;B&#39;}</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tokenized_peptide</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="o">.</span><span class="n">tokenize_peptide</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+    <span class="n">energy</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">([</span><span class="o">-</span><span class="n">biology</span><span class="o">.</span><span class="n">x_logps</span><span class="p">[</span><span class="n">aa</span><span class="p">]</span> <span class="k">for</span> <span class="n">aa</span> <span class="ow">in</span> <span class="n">tokenized_peptide</span><span class="p">])</span>
+    <span class="k">return</span> <span class="n">energy</span> <span class="o">/</span> <span class="n">length</span><span class="p">(</span><span class="n">peptide</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../biology/" class="md-footer__link md-footer__link--prev" aria-label="Previous: biology" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              biology
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../encoding/" class="md-footer__link md-footer__link--next" aria-label="Next: encoding" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              encoding
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.078830c0.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
