@@ -9,7 +9,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setuptools.setup(
     name="peptidy",
-    version="0.0.4",
+    version="0.0.1",
     description="A Python library that converts peptide sequences to matrices for machine learning.",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -31,15 +31,16 @@ setuptools.setup(
     keywords="peptides, proteins, descriptors, machine learning, deep learning",
     python_requires=">=3.6, <4",
     install_requires=[],
+    packages=setuptools.find_packages(exclude=["*tests*"]),
     package_data={
         "peptidy": ["./data/*"],
     },
     readme="README.md",
     license="MIT",
-    url="https://molml.github.io/peptidy/",
+    url="https://github.com/molML/peptidy/",
     project_urls={
         "Bug Reports": "https://molml.github.io/peptidy/issues/",
         "Documentation": "https://molml.github.io/peptidy/",
-        "Source": "https://molml.github.io/peptidy/",
+        "Source": "https://github.com/molML/peptidy/",
     },
 )
