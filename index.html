@@ -267,29 +267,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation-hammer_and_wrench" class="md-nav__link">
-    Installation :hammer_and_wrench:
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start-rocket" class="md-nav__link">
-    Quick Start :rocket:
+  <a href="#quick-start" class="md-nav__link">
+    Quick Start
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#post-translational-modifications-sparkles" class="md-nav__link">
-    Post-translational Modifications :sparkles:
+  <a href="#post-translational-modifications" class="md-nav__link">
+    Post-translational Modifications
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#computing-peptide-descriptors-electron" class="md-nav__link">
-    Computing Peptide Descriptors :electron:
+  <a href="#computing-peptide-descriptors" class="md-nav__link">
+    Computing Peptide Descriptors
   </a>
   
 </li>
@@ -426,29 +426,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation-hammer_and_wrench" class="md-nav__link">
-    Installation :hammer_and_wrench:
+  <a href="#installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start-rocket" class="md-nav__link">
-    Quick Start :rocket:
+  <a href="#quick-start" class="md-nav__link">
+    Quick Start
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#post-translational-modifications-sparkles" class="md-nav__link">
-    Post-translational Modifications :sparkles:
+  <a href="#post-translational-modifications" class="md-nav__link">
+    Post-translational Modifications
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#computing-peptide-descriptors-electron" class="md-nav__link">
-    Computing Peptide Descriptors :electron:
+  <a href="#computing-peptide-descriptors" class="md-nav__link">
+    Computing Peptide Descriptors
   </a>
   
 </li>
@@ -483,16 +483,18 @@
 <h1 id="peptidy">peptidy</h1>
 <p>Welcome to <code>peptidy</code> &mdash; a tiny and tidy python library to vectorize peptide sequences (and proteins) for machine learning applications!</p>
 <p><code>peptidy</code> bridges the gap between peptide sequences and machine learning applications by converting peptide sequences into numerical vectors with a <em>single function call</em>. <code>peptidy</code> is obsessed with the simplicity and tidiness &mdash; it is designed to be as accessible as possible for everyone.</p>
-<p>Key features of <code>peptidy</code> include:
-- <strong>Simple</strong>: The programming interface of <code>peptidy</code> is designed to be as simple as possible and well-documented to minimize entry barriers. Converting a peptide sequence into a numerical vector is just a single function call.
-- <strong>Tiny</strong>: <code>peptidy</code> is written in pure Python (&gt;=3.6) and free from external dependencies. It is designed to be light-weight.
-- <strong>Broad</strong>: <code>peptidy</code> supports a wide range of encoding schemes for both discriminative and generative applications, <em>e.g.,</em> one-hot encoding, BLOSUM62, and physicochemical descriptors. Moreover, <code>peptidy</code> can handle peptides with post-translational modifications.</p>
-<h2 id="installation-hammer_and_wrench">Installation :hammer_and_wrench:</h2>
+<p>Key features of <code>peptidy</code> include:</p>
+<ul>
+<li><strong>Simple</strong>: The programming interface of <code>peptidy</code> is designed to be as simple as possible and well-documented to minimize entry barriers. Converting a peptide sequence into a numerical vector is just a single function call.</li>
+<li><strong>Tiny</strong>: <code>peptidy</code> is written in pure Python (&gt;=3.6) and free from external dependencies. It is designed to be light-weight.</li>
+<li><strong>Broad</strong>: <code>peptidy</code> supports a wide range of encoding schemes for both discriminative and generative applications, <em>e.g.,</em> one-hot encoding, BLOSUM62, and physicochemical descriptors. Moreover, <code>peptidy</code> can handle peptides with post-translational modifications.</li>
+</ul>
+<h2 id="installation">Installation <img alt="🛠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f6e0.svg" title=":hammer_and_wrench:" /></h2>
 <pre><code class="language-bash">pip install peptidy
 </code></pre>
-<p>Simple :shrug:</p>
-<h2 id="quick-start-rocket">Quick Start :rocket:</h2>
-<p>The most important module in <code>peptidy</code> is <code>peptidy.encoding</code>. This module provides functions to convert peptide sequences into numerical vectors. Five encoding methods are implemented: <code>aminoacid_descriptor_encoding</code>, <code>blosum62_encoding</code>, <code>label_encoding</code>, <code>one_hot_encoding</code> and <code>peptide_descriptor_encoding</code>. All of those functions take a peptide sequence as input and return a numerical vector or matrix. <a href="https://molml.github.io/peptidy/api/encoding/">An extensive documentation is available for all encoding methods</a> :book:</p>
+<p>Simple <img alt="🤷" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f937.svg" title=":shrug:" /></p>
+<h2 id="quick-start">Quick Start <img alt="🚀" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f680.svg" title=":rocket:" /></h2>
+<p>The most important module in <code>peptidy</code> is <code>peptidy.encoding</code>. This module provides functions to convert peptide sequences into numerical vectors. Five encoding methods are implemented: <code>aminoacid_descriptor_encoding</code>, <code>blosum62_encoding</code>, <code>label_encoding</code>, <code>one_hot_encoding</code> and <code>peptide_descriptor_encoding</code>. All of those functions take a peptide sequence as input and return a numerical vector or matrix. <a href="https://molml.github.io/peptidy/api/encoding/">An extensive documentation is available for all encoding methods</a> <img alt="📖" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f4d6.svg" title=":book:" /></p>
 <p>Here are some quick examples to start with:</p>
 <pre><code class="language-python"># Represent a peptide sequence with label encoding
 import peptidy
@@ -500,13 +502,13 @@ peptide = &quot;ACD&quot;
 padded_labels = peptidy.encoding.label_encoding(peptide, padding_len=5)  # [1, 2, 3, 0, 0]
 </code></pre>
 <p>There you go! The peptide "ACD" is converted into a list of labels, padded, and is ready to be fed into a deep learning model.</p>
-<h2 id="post-translational-modifications-sparkles">Post-translational Modifications :sparkles:</h2>
-<p><code>peptidy</code> can handle peptides with post-translational modifications, such as phosphorylation, acetylation, and glycosylation. You can find a full list of supported modifications in the <a href="https://peptidy.readthedocs.io/en/latest/api/biology.html">API documentation</a>.</p>
+<h2 id="post-translational-modifications">Post-translational Modifications <img alt="✨" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2728.svg" title=":sparkles:" /></h2>
+<p><code>peptidy</code> can handle peptides with post-translational modifications, such as phosphorylation, acetylation, and glycosylation. You can find a full list of supported modifications in the <a href="https://molml.github.io/peptidy/api/biology/">documentation</a>.</p>
 <pre><code class="language-python"># Represent a peptide sequence with one-hot encoding and phosphorylation
 peptide = &quot;ACS_pD&quot;  # S_p stands for phosphorylated Serine
 padded_one_hot = peptidy.encoding.one_hot_encoding(peptide, padding_len=5)  # (5, 29)
 </code></pre>
-<h2 id="computing-peptide-descriptors-electron">Computing Peptide Descriptors :electron:</h2>
+<h2 id="computing-peptide-descriptors">Computing Peptide Descriptors <img alt="🖥" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f5a5.svg" title=":desktop_computer:" /></h2>
 <p>Peptides are commonly represented by their physicochemical properties in machine learning models and <code>peptidy</code> provides functions to facilitate those models. In addition to providing <code>peptidy.encoding.peptide_descriptor_encoding</code> function, <code>peptidy</code> also exposes a module, <code>peptidy.descriptors</code> with many peptide descriptors, <em>e.g.,</em> charge, hydrophobicity, and instability index. The full list and descriptions of supported descriptors is available on the <a href="https://molml.github.io/peptidy/api/descriptors/">documentation page</a>.</p>
 <pre><code class="language-python"># Compute molecular weight of a peptide
 peptide = &quot;ACS_pD&quot;
@@ -514,7 +516,7 @@ descriptors = peptidy.descriptors.molecular_weight(peptide)  # 474.375
 </code></pre>
 <h2 id="concluding-remarks">Concluding Remarks</h2>
 <p>This was a quick introduction to capabilities of <code>peptidy</code>. But <code>peptidy</code> can empower much more! We provide classification and generation <a href="https://github.com/molML/peptidy/examples">examples</a> using xgboost, tensorflow, and keras, where peptidy smooths the computations. Feel free to check our <a href="https://molml.github.io/peptidy/">documentation</a> for more information and examples and create issues or pull requests on our <a href="https://github.com/molML/peptidy/issues">GitHub repository</a> for added functionalities or bug reports.</p>
-<p>See you in the forums! :wave:</p>
+<p>See you in the forums! <img alt="👋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f44b.svg" title=":wave:" /></p>
 
 
 
