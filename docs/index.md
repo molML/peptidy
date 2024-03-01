@@ -5,6 +5,7 @@ Welcome to `peptidy` &mdash; a tiny and tidy python library to vectorize peptide
 `peptidy` bridges the gap between peptide sequences and machine learning applications by converting peptide sequences into numerical vectors with a *single function call*. `peptidy` is obsessed with the simplicity and tidiness &mdash; it is designed to be as accessible as possible for everyone.
 
 Key features of `peptidy` include:
+
 - **Simple**: The programming interface of `peptidy` is designed to be as simple as possible and well-documented to minimize entry barriers. Converting a peptide sequence into a numerical vector is just a single function call.
 - **Tiny**: `peptidy` is written in pure Python (>=3.6) and free from external dependencies. It is designed to be light-weight.
 - **Broad**: `peptidy` supports a wide range of encoding schemes for both discriminative and generative applications, *e.g.,* one-hot encoding, BLOSUM62, and physicochemical descriptors. Moreover, `peptidy` can handle peptides with post-translational modifications.
@@ -30,7 +31,7 @@ There you go! The peptide "ACD" is converted into a list of labels, padded, and 
 
 
 ## Post-translational Modifications :sparkles:
-`peptidy` can handle peptides with post-translational modifications, such as phosphorylation, acetylation, and glycosylation. You can find a full list of supported modifications in the [API documentation](https://peptidy.readthedocs.io/en/latest/api/biology.html).
+`peptidy` can handle peptides with post-translational modifications, such as phosphorylation, acetylation, and glycosylation. You can find a full list of supported modifications in the [documentation](https://molml.github.io/peptidy/api/biology/).
 
 ```python
 # Represent a peptide sequence with one-hot encoding and phosphorylation
@@ -38,7 +39,7 @@ peptide = "ACS_pD"  # S_p stands for phosphorylated Serine
 padded_one_hot = peptidy.encoding.one_hot_encoding(peptide, padding_len=5)  # (5, 29)
 ```
 
-## Computing Peptide Descriptors :electron: 
+## Computing Peptide Descriptors :desktop_computer:
 Peptides are commonly represented by their physicochemical properties in machine learning models and `peptidy` provides functions to facilitate those models. In addition to providing `peptidy.encoding.peptide_descriptor_encoding` function, `peptidy` also exposes a module, `peptidy.descriptors` with many peptide descriptors, *e.g.,* charge, hydrophobicity, and instability index. The full list and descriptions of supported descriptors is available on the [documentation page](https://molml.github.io/peptidy/api/descriptors/).
 
 ```python

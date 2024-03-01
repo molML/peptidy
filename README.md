@@ -30,7 +30,7 @@ There you go! The peptide "ACD" is converted into a list of labels, padded, and 
 
 
 ## Post-translational Modifications :sparkles:
-`peptidy` can handle peptides with post-translational modifications, such as phosphorylation, acetylation, and glycosylation. You can find a full list of supported modifications in the [API documentation](https://peptidy.readthedocs.io/en/latest/api/biology.html).
+`peptidy` can handle peptides with post-translational modifications, such as phosphorylation, acetylation, and glycosylation. You can find a full list of supported modifications in the [documentation](https://molml.github.io/peptidy/api/biology/).
 
 ```python
 # Represent a peptide sequence with one-hot encoding and phosphorylation
@@ -38,7 +38,7 @@ peptide = "ACS_pD"  # S_p stands for phosphorylated Serine
 padded_one_hot = peptidy.encoding.one_hot_encoding(peptide, padding_len=5)  # (5, 29)
 ```
 
-## Computing Peptide Descriptors :electron: 
+## Computing Peptide Descriptors :desktop_computer:
 Peptides are commonly represented by their physicochemical properties in machine learning models and `peptidy` provides functions to facilitate those models. In addition to providing `peptidy.encoding.peptide_descriptor_encoding` function, `peptidy` also exposes a module, `peptidy.descriptors` with many peptide descriptors, *e.g.,* charge, hydrophobicity, and instability index. The full list and descriptions of supported descriptors is available on the [documentation page](https://molml.github.io/peptidy/api/descriptors/).
 
 ```python
