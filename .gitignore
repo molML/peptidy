@@ -1,0 +1,6 @@
+**__pycache__**
+.vscode/*
+.ruff_cache/*
+dist/*
+site/*
+peptidy.egg-info/*
