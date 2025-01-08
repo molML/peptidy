@@ -1,5 +1,7 @@
 # peptidy
 
+![peptidy logo](./docs/assets/peptidy_logo.png)
+
 Welcome to `peptidy` &mdash; a tiny and tidy python library to vectorize peptide sequences (and proteins) for machine learning applications!
 
 `peptidy` bridges the gap between peptide sequences and machine learning applications by converting peptide sequences into numerical vectors with a *single function call*. `peptidy` is obsessed with the simplicity and tidiness &mdash; it is designed to be as accessible as possible for everyone.
@@ -50,5 +52,17 @@ descriptors = peptidy.descriptors.molecular_weight(peptide)  # 474.375
 ## Concluding Remarks
 
 This was a quick introduction to capabilities of `peptidy`. But `peptidy` can empower much more! We provide classification and generation [examples](https://github.com/molML/peptidy/tree/main/examples) using xgboost, keras, and pytorch, where peptidy smooths the computations. Feel free to check our [documentation](https://molml.github.io/peptidy/) for more information and examples and create issues or pull requests on our [GitHub repository](https://github.com/molML/peptidy/issues) for added functionalities or bug reports.
+
+And if you use `peptidy` in your research, consider citing our [preprint](https://chemrxiv.org/engage/chemrxiv/article-details/6622273a418a5379b02b23be):
+
+```bibtex
+@article{ozccelik2024peptidy,
+  title={peptidy: A light-weight Python library for peptide representation in machine learning},
+  author={{\"O}z{\c{c}}elik, R{\i}za and van Weesep, Laura and de Ruiter, Sarah and Grisoni, Francesca},
+  journal={ChemRxiv},
+  doi={10.26434/chemrxiv-2024-bm3lv},
+  year={2024}
+}
+```
 
 See you in the forums! :wave:
