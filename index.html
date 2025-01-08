@@ -481,6 +481,7 @@
 
 
 <h1 id="peptidy">peptidy</h1>
+<p><img alt="peptidy logo" src="../docs/assets/peptidy_logo.png" /></p>
 <p>Welcome to <code>peptidy</code> &mdash; a tiny and tidy python library to vectorize peptide sequences (and proteins) for machine learning applications!</p>
 <p><code>peptidy</code> bridges the gap between peptide sequences and machine learning applications by converting peptide sequences into numerical vectors with a <em>single function call</em>. <code>peptidy</code> is obsessed with the simplicity and tidiness &mdash; it is designed to be as accessible as possible for everyone.</p>
 <p>Key features of <code>peptidy</code> include:</p>
@@ -515,7 +516,16 @@ peptide = &quot;ACS_pD&quot;
 descriptors = peptidy.descriptors.molecular_weight(peptide)  # 474.375
 </code></pre>
 <h2 id="concluding-remarks">Concluding Remarks</h2>
-<p>This was a quick introduction to capabilities of <code>peptidy</code>. But <code>peptidy</code> can empower much more! We provide classification and generation <a href="https://github.com/molML/peptidy/examples">examples</a> using xgboost, tensorflow, and keras, where peptidy smooths the computations. Feel free to check our <a href="https://molml.github.io/peptidy/">documentation</a> for more information and examples and create issues or pull requests on our <a href="https://github.com/molML/peptidy/issues">GitHub repository</a> for added functionalities or bug reports.</p>
+<p>This was a quick introduction to capabilities of <code>peptidy</code>. But <code>peptidy</code> can empower much more! We provide classification and generation <a href="https://github.com/molML/peptidy/examples">examples</a> using xgboost, keras, and pytorch, where peptidy smooths the computations. Feel free to check our <a href="https://molml.github.io/peptidy/">documentation</a> for more information and examples and create issues or pull requests on our <a href="https://github.com/molML/peptidy/issues">GitHub repository</a> for added functionalities or bug reports.</p>
+<p>And if you use <code>peptidy</code> in your research, consider citing our <a href="https://chemrxiv.org/engage/chemrxiv/article-details/6622273a418a5379b02b23be">preprint</a>:</p>
+<pre><code class="language-bibtex">@article{ozccelik2024peptidy,
+  title={peptidy: A light-weight Python library for peptide representation in machine learning},
+  author={{\&quot;O}z{\c{c}}elik, R{\i}za and van Weesep, Laura and de Ruiter, Sarah and Grisoni, Francesca},
+  journal={ChemRxiv},
+  doi={10.26434/chemrxiv-2024-bm3lv},
+  year={2024}
+}
+</code></pre>
 <p>See you in the forums! <img alt="👋" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f44b.svg" title=":wave:" /></p>
 
 
