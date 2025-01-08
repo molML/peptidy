@@ -1,6 +1,6 @@
 # peptidy
 
-![peptidy logo](../docs/assets/peptidy_logo.png)
+![peptidy logo](./assets/peptidy_logo.png)
 
 Welcome to `peptidy` &mdash; a tiny and tidy python library to vectorize peptide sequences (and proteins) for machine learning applications!
 
