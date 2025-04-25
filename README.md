@@ -56,12 +56,15 @@ This was a quick introduction to capabilities of `peptidy`. But `peptidy` can em
 And if you use `peptidy` in your research, consider citing our [preprint](https://chemrxiv.org/engage/chemrxiv/article-details/6622273a418a5379b02b23be):
 
 ```bibtex
-@article{ozccelik2024peptidy,
-  title={peptidy: A light-weight Python library for peptide representation in machine learning},
+@article{ozccelik2025peptidy,
+  title={peptidy: a light-weight Python library for peptide representation in machine learning},
   author={{\"O}z{\c{c}}elik, R{\i}za and van Weesep, Laura and de Ruiter, Sarah and Grisoni, Francesca},
-  journal={ChemRxiv},
-  doi={10.26434/chemrxiv-2024-bm3lv},
-  year={2024}
+  journal={Bioinformatics Advances},
+  volume={5},
+  number={1},
+  pages={vbaf058},
+  year={2025},
+  publisher={Oxford University Press}
 }
 ```
 
