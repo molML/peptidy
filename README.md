@@ -53,7 +53,7 @@ descriptors = peptidy.descriptors.molecular_weight(peptide)  # 474.375
 
 This was a quick introduction to capabilities of `peptidy`. But `peptidy` can empower much more! We provide classification and generation [examples](https://github.com/molML/peptidy/tree/main/examples) using xgboost, keras, and pytorch, where peptidy smooths the computations. Feel free to check our [documentation](https://molml.github.io/peptidy/) for more information and examples and create issues or pull requests on our [GitHub repository](https://github.com/molML/peptidy/issues) for added functionalities or bug reports.
 
-And if you use `peptidy` in your research, consider citing our [preprint](https://chemrxiv.org/engage/chemrxiv/article-details/6622273a418a5379b02b23be):
+And if you use `peptidy` in your research, consider citing our [publication](https://academic.oup.com/bioinformaticsadvances/article/5/1/vbaf058/8090021?utm_source=advanceaccess&utm_campaign=bioinformaticsadvances&utm_medium=email):
 
 ```bibtex
 @article{ozccelik2025peptidy,
